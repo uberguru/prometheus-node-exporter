@@ -20,4 +20,4 @@ RUN chown -R prometheus: /opt/node-exporter
 #Execution stuff
 USER       prometheus
 EXPOSE     9100
-CMD [ "/opt/node-exporter/node_exporter" ]
+ENTRYPOINT [ "/opt/node-exporter/node_exporter" ]
